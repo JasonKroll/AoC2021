@@ -6,6 +6,6 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
-    <None Update="$(ProjectDir)Inputs\**"  CopyToOutputDirectory="Always"  />
+    <None Update="$(ProjectDir)Inputs\**" CopyToOutputDirectory="Always" />
   </ItemGroup>
 </Project>

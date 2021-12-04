@@ -18,7 +18,7 @@
     <ProjectReference Include="..\AoC2021.Core\AoC2021.Core.csproj" />
   </ItemGroup>
 
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition=" '$(OS)' == 'Windows_NT' ">
     <Exec Command="&quot;C:\Program Files (x86)\Windows Kits\10\App Certification Kit\signtool.exe&quot; sign /r Aurecon-RootCA /v /fd sha256 /t http://timestamp.sectigo.com $(TargetDir)\testhost.exe&#xD;&#xA;" />
   </Target>
 
