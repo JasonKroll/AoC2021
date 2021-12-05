@@ -15,6 +15,7 @@
             {
                 var path = @"./Inputs";
                 var file = Path.Combine(path, $"{type.Name}Test.txt");
+                var fullpath = Path.GetFullPath(file);
                 return System.IO.File.ReadLines(@file).ToList();
             }
             catch (Exception)
