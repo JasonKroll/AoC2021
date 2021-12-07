@@ -86,26 +86,30 @@ namespace AoC2021.Tests
         [Test]
         public void Day06a()
         {
-            Assert.Fail();
+            var res = _Runner.Answer1(typeof(Day06));
+            Assert.That(res, Is.EqualTo(5934));
         }
 
         [Test]
         public void Day06b()
         {
-            Assert.Fail();
+            var res = _Runner.Answer2(typeof(Day06));
+            Assert.That(res, Is.EqualTo(26984457539));
         }
 
 
         [Test]
         public void Day07a()
         {
-            Assert.Fail();
+            var res = _Runner.Answer1(typeof(Day07));
+            Assert.That(res, Is.EqualTo(37));
         }
 
         [Test]
         public void Day07b()
         {
-            Assert.Fail();
+            var res = _Runner.Answer2(typeof(Day07));
+            Assert.That(res, Is.EqualTo(168));
         }
 
 
