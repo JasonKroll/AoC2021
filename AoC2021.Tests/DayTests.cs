@@ -144,13 +144,15 @@ namespace AoC2021.Tests
         [Test]
         public void Day10a()
         {
-            Assert.Fail();
+            var res = _Runner.Answer1(typeof(Day10));
+            Assert.That(res, Is.EqualTo(26397));
         }
 
         [Test]
         public void Day10b()
         {
-            Assert.Fail();
+            var res = _Runner.Answer2(typeof(Day10));
+            Assert.That(res, Is.EqualTo(288957)); 
         }
 
         [Test]
